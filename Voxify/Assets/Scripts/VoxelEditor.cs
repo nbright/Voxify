@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using System.Reflection;
 using System.Collections.Generic;
+using System.Windows.Forms;
 using SimpleJSON;
 
 public enum EditorMode {
