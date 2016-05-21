@@ -270,7 +270,13 @@ public class VoxelEditor : MonoBehaviour {
 	#region Stage Management
 
 	public Color GetModifiedColor(Voxel voxel) {
-		return Color.Lerp(voxel.VoxelColor, voxel.ModColor, SelectionPingPong);
+		Color newColor = new Color(
+			Mathf.Lerp(voxel.VoxelColor.r, voxel.ModColor.r, SelectionPingPong),
+			Mathf.Lerp(voxel.VoxelColor.g, voxel.ModColor.g, SelectionPingPong),
+			Mathf.Lerp(voxel.VoxelColor.b, voxel.ModColor.b, SelectionPingPong),
+			Mathf.Lerp(voxel.VoxelColor.a, voxel.ModColor.a, SelectionPingPong));
+		return newColor;
+		//return Color.Lerp(voxel.VoxelColor, voxel.ModColor, SelectionPingPong);
 	}
 
 	public void FillSelection() {
@@ -350,7 +356,7 @@ public class VoxelEditor : MonoBehaviour {
 		otherwise, save to current save file.
 
 		*/
-		File.WriteAllText("test.vpj", GetJSON().ToString());
+		//File.WriteAllText("test.vpj", GetJSON().ToString());
 	}
 
 	public void SaveModelAsPressed() {

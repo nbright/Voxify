@@ -18,7 +18,7 @@ public enum Direction {
 
 public class Voxel {
 
-	public Color ModColor = new Color(0.25f, 0.25f, 1f, 1f);
+	public Color ModColor = new Color(0.25f, 0.25f, 1f, 0.5f);
 	public Color VoxelColor = Color.gray;
 
 	public Color RealColor {
