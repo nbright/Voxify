@@ -5,4 +5,4 @@ Voxify is programmed in C#, using Unity3D because I tried using SharpDX and I do
 
 ### Platforms
 
-Mono.NET's System.Windows.Forms and System.Drawing wrappers are not compatible with Linux, unfortunately. Until we implement something like QT or GTK, Voxify will not be released of Linux and will only be built on OS X and Windows.
+Mono.NET's System.Windows.Forms and System.Drawing wrappers are not compatible with Linux, unfortunately. Until we implement something like QT or GTK, Voxify will not be released on Linux and will only be built on OS X and Windows.
